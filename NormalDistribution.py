@@ -45,11 +45,11 @@ print(
 )
 
 fig = ff.create_distplot([data], ["reading scores"], show_hist=False)
-fig.add_trace(go.Scatter(x=[mean, mean], y=[0, 1], mode="lines", name="Mean"))
+fig.add_trace(go.Scatter(x=[mean, mean], y=[0, 0.17], mode="lines", name="Mean"))
 fig.add_trace(
     go.Scatter(
         x=[std1Start, std1Start],
-        y=[0, 1],
+        y=[0, 0.17],
         mode="lines",
         name="1 Standard Deviation",
     )
@@ -57,7 +57,7 @@ fig.add_trace(
 fig.add_trace(
     go.Scatter(
         x=[std2End, std2End],
-        y=[0, 1],
+        y=[0, 0.17],
         mode="lines",
         name="1 Standard Deviation",
     )
@@ -65,7 +65,7 @@ fig.add_trace(
 fig.add_trace(
     go.Scatter(
         x=[std2Start, std2Start],
-        y=[0, 1],
+        y=[0, 0.17],
         mode="lines",
         name="2 Standard Deviations",
     )
@@ -73,7 +73,7 @@ fig.add_trace(
 fig.add_trace(
     go.Scatter(
         x=[std3End, std3End],
-        y=[0, 1],
+        y=[0, 0.17],
         mode="lines",
         name="2 Standard Deviations",
     )
